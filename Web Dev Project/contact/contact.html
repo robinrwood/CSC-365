@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Robin Wood-->
+<html lang="en-US">
+	<head>
+		<!--meta-->
+		<meta charset="utf-8">
+		<meta name = "description" content= "Located in downtown Wilmington, we provide locally grown houseplants, seedlings, and gardening accessories.">
+		<meta name = "keywords" content= "succulents, plants, cactus, gardening, seedlings, seeds, Wilmington">
+
+		<!--stylesheets-->
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/contact.css">
+		
+		<!--other-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">					
+		<link rel="shortcut icon" href="../images/seedling-solid.svg">
+
+		<title>Contact Us!</title>
+	</head>
+	<body>
+		<header>
+			<h2>Robin's Plant Outpost</h2>
+		</header> 
+	
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About Us</a></li>
+				<li><a href="../shop.html">Shop</a></li>
+				<li><a href="" class="current">Contact</a>
+			</ul>
+		</nav>
+		
+		<script>
+			function clearAll(){
+				document.getElementById("my_form").reset(); 
+			}
+		</script>
+
+		<main>
+			<article id="form">
+				<h1>Contact Us!</h1>
+				
+				<form id="my_form" name="input" action="sent.html" method="get">
+					<label for="firstname">First Name *</label>
+					<input type="text" name="firstname" id="firstname" autofocus required><br>
+
+					<label for="lastname">Last Name</label>
+					<input type="text" name="lastname" id="lastname" required><br>
+
+					<label for="email">Email *</label>
+					<input type="email" name="email" id="email" required><br>
+
+					<label for="message">Message *</label>
+					<textarea name="message" id="message" rows="4" cols="50" required>
+					</textarea><br>
+
+					<input type="submit" id="button" value="Send">
+					<input type="button" id="clear" value="Clear All" onClick = "clearAll()">
+				</form>
+			</article>
+
+			<article id="info">
+				<ul>
+					<li>(910) 555-5555</li>
+					<li>info@outpost.com</li>
+					<li>123 Plant Ln. Wilmington, NC</li>
+				</ul>
+			</article>
+
+		</main>
+	
+		<footer>
+			<img src="../images/facebook-app-symbol.png" alt="facebook symbol">
+			<img src="../images/instagram.png" alt="instagram symbol">
+			&copy; 2022 Robin's Plant Outpost, Inc.
+		</footer>
+	</body>
+</html>

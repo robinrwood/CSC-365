@@ -1,0 +1,61 @@
+html {
+    background-color: white;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100%;
+    margin: .5in;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    color:black;
+}
+
+nav {
+    display: none;
+}
+
+main {
+    display: block;
+    text-align:left;
+}
+#bio {	
+    background-color: white;
+    color: black;
+    padding: 0;
+}
+#new {
+    background-color: white;
+}
+#new h1 {
+    color: black;
+}
+#new img {
+    width: 100%;
+}
+#info ul {
+    margin: auto;
+    align-items: initial;
+}
+#print {
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#print:hover, #print:focus {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	cursor: pointer; }
+
+footer {
+    background-color: white;
+    text-align: left;
+}

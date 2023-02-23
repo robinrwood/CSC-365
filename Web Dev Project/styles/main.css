@@ -1,0 +1,136 @@
+/*Robin Wood*/
+html {
+	background-color: #F1E3B9; }
+
+body { 
+	font-family: Playfair Display, serif;
+	font-size: 120%;
+	width: 100%;
+	margin: 0 auto; }
+
+header { 
+	padding: 0 1.5em; 
+	margin: 0 auto;
+	float: left;
+	color: #50412A; }
+
+nav ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 1em 0; }
+nav ul li {
+	padding: .5em 1.5em; }
+nav ul li a { 
+	font-size: 130%;
+	color: #50412A;
+	text-decoration: none; 
+	padding: .5em .5em;}
+nav ul li a.current { 
+	/* am not loving the current page link look :/ */
+	color: #994d00;}
+
+main { 
+	display: flex; 
+	flex-direction: column; /* possibly change up flex stuff */
+	text-align: center; } 
+#bio {	
+	padding: .5em 1em 1em 1em;
+	background-color: #2C502A; 
+	color: #F1E3B9;
+	/*border-bottom: 10px solid #50412A;*/ }
+#bio h1 {
+	font-size: 200%; }
+
+#new {
+	background-color: #994d00; } 
+#new h1 {
+	color: #F1E3B9;
+	font-size: 200%; }
+#new img {
+	width: 100%;
+	}
+
+#info ul { 
+	padding: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none; } 
+	
+#print {
+	align-self: center;
+	font-family: Playfair Display, serif;
+	margin: 0 0 2em;
+	padding: 1em .5em;
+	width: 20%;
+	background-color: #2C502A;
+	border: 4px solid #2C502A;
+	border-radius: 3px;
+	color: #F1E3B9;
+}
+
+footer {
+	padding: 1.5em 1.5em;
+	background-color: #50412A;
+	font-size: 75%;
+	text-align: center; 
+	}
+footer img {
+	width: 2%;
+	padding-right: 1em;
+}
+footer p {
+    margin: .5em 0 0;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+	box-sizing: content-box;
+	border-radius: 5px;
+	background-color: #994d00;
+	color: #F1E3B9;
+	cursor: pointer; }
+
+#print:hover, #print:focus {
+	background-color: #994d00;
+	color: #F1E3B9;
+	border: 4px solid #994d00;
+	cursor: pointer; }
+
+/* media queries */
+
+/* mobile landscape to tablet portrait */
+@media only screen and (min-width: 505px) and (max-width: 800px) {
+	header, nav {
+		font-size: 75%;
+	}
+	header {
+		margin: .2% 0 0;
+	}
+}
+
+/* mobile portrait layout */
+@media only screen and (max-width: 504px) {
+	body {
+		font-size: 95%;
+		display: grid;
+		grid-template: 7% 16% 1fr 6% / 100%;
+	}
+	header, nav ul {
+		padding: 0;
+	}
+	header {
+		justify-self: baseline; /*make it go to bottom of container*/
+	}
+	nav ul {
+		font-size: 80%;
+		flex-flow: column nowrap;
+		text-align:  center;
+		margin: 0;
+	}
+	#bio, #new h1 {
+		padding: 0 1em;
+	}
+}

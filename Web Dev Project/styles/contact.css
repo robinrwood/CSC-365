@@ -1,0 +1,81 @@
+/*Robin Wood*/
+html {
+	background-color: #994d00; }
+body {	
+	color: #F1E3B9; } 
+
+header {
+	color: #F1E3B9; }
+
+nav ul li a {
+	color: #F1E3B9; 
+	border-bottom-color: #F1E3B9; }
+nav ul li a.current { 	
+	color: #50412A; 
+	/*background-color: #F1E3B9;*/
+	border-bottom: 1.5px solid  #994d00; }
+
+#form {
+	width: 100%;
+	padding-left: 2em;
+	text-align: left;  }
+#form h1 {
+	font-size: 200%; }
+#form label {
+	display: block; 
+	padding-bottom: .2em; 
+	font-family: Andale , Gill Sans, sans serif; }
+input, textarea {
+	border: none;
+	border-radius: 5px;
+	background-color: #F1E3B9;
+	padding: 15px 20px;
+	margin-bottom: .75em;
+	font-size: .8em;
+	color: #50412A; }
+#clear {
+	box-sizing: content-box;
+	background-color: #994d00;
+	font-family: inherit;
+	font-size: 1em;
+	color: #F1E3B9;
+	border: 4px solid #F1E3B9; 
+}
+#button {
+	box-sizing: content-box;
+	background-color: #994d00;
+	font-family: inherit;
+	font-size: 1em;
+	color: #F1E3B9;
+	border: 4px solid #F1E3B9; }
+audio {
+	display: none;
+}
+footer {
+	color: black;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+	box-sizing: content-box;
+	border-radius: 5px;
+	background-color: #F1E3B9;
+	color: #994d00;
+	cursor: pointer; }
+
+#button:hover, #button:focus {
+	box-sizing: content-box;
+	background-color: #F1E3B9;
+	color: #994d00;
+	border: 4px solid #F1E3B9;
+	cursor: pointer; }
+
+#clear:hover, #clear:focus {
+	box-sizing: content-box;
+	background-color: #F1E3B9;
+	color: #994d00;
+	border: 4px solid #F1E3B9;
+	cursor: pointer; }
+
+
+
+ 
